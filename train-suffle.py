@@ -17,7 +17,6 @@ while True:
         origin = list(map(int, input().split()))
         re = list(map(int, input().split()))
         res.append(solve(n, origin, re))
-        for result in res:
-            print(result)
+        print(res)
     except EOFError:
         break
