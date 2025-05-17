@@ -16,7 +16,7 @@ try:
         n = int(input())
         origin = list(map(int, input().split()))
         re = list(map(int, input().split()))
-        res.append(solve(n, origin, re))
-        print(res)
-    except EOFError:
-        break
+
+        print(solve(n, origin, re))
+except EOFError:
+    pass
