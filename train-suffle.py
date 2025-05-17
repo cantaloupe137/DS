@@ -10,9 +10,9 @@ def solve(n, origin, re):
     return "Success" if not re else "Fail"
 
 
-while True:
-    try:
-        res = []
+try:
+    while True:
+
         n = int(input())
         origin = list(map(int, input().split()))
         re = list(map(int, input().split()))
