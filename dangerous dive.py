@@ -1,7 +1,7 @@
 while True:
     try:
         m, n = map(int, input().split())
-        a = list(map(int, input().split()))
+        lst = list(map(int, input().split()))
     except EOFError:
         break
 
@@ -9,6 +9,6 @@ while True:
         print("*")
     else:
         for i in range(1, m+1):
-            if i not in a:
+            if i not in lst:
                 print("{} ".format(i), end="")
         print("")
