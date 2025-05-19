@@ -10,5 +10,5 @@ while True:
     else:
         for i in range(1, m+1):
             if i not in lst:
-                print("{} ".format(i), end="")
+                print(f"{i} ", end="")
         print("")
