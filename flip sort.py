@@ -6,11 +6,13 @@ def bubble_sort(n, lst, res):
                 lst[j], lst[j + 1] = lst[j + 1], lst[j]
                 res += 1
     return res
+
+
 while True:
     try:
         n = int(input())
         nums = list(map(int, input().split()))
         res = bubble_sort(n, nums, 0)
-        print('Minimum exchange operations :', res)
+        print(f'Minimum exchange operations :{res}')
     except EOFError:
         break
