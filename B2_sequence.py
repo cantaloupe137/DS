@@ -9,9 +9,10 @@ def solve(n, nums):
     seen = set()
     for i in range(n):
         for j in range(i, n):
-            if nums[i] + nums[j] in seen:
+            sum_value = nums[i] + nums[j]
+            if sum_value in seen:
                 return 'It is not a B2-Sequence.'
-            seen.add(nums[i] + nums[j])
+            seen.add(sum_value)
     return 'It is a B2-Sequence.'
 
 
