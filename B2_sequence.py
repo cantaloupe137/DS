@@ -1,8 +1,11 @@
 def solve(n, nums):
+    # 檢查是不是嚴格遞增
     for i in range(1, n):
-        if nums[i] < 1 or nums[i - 1] < 1: return 'It is not a B2-Sequence.'
-        if nums[i - 1] >= nums[i]: return 'It is not a B2-Sequence.'
-
+        if nums[i] < 1 or nums[i - 1] < 1:
+            return 'It is not a B2-Sequence.'
+        if nums[i - 1] >= nums[i]:
+            return 'It is not a B2-Sequence.'
+    # seen[]存每個B[i] + B[j]的和，如果B[i] + B[j]出現在seen[]裡面的話，就不是B2-sequence
     seen = set()
     for i in range(n):
         for j in range(i, n):
