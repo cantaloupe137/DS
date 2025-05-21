@@ -51,7 +51,7 @@ int main()
                 p2 = i;
                 col_count++;
                 col_sum = 0;
-            }
+            } // 加個註解
             if (col_count > 1)
                 break;
             col_sum = 0;
