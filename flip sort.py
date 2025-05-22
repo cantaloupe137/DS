@@ -13,6 +13,6 @@ while True:
         n = int(input())
         nums = list(map(int, input().split()))
         res = bubble_sort(n, nums, 0)
-        print(f'Minimum exchange operations :{res}')
+        print(f'Minimum exchange operations : {res}')
     except EOFError:
         break
