@@ -25,7 +25,7 @@ while True:
         n = int(line)
         line = input().strip()
         if not line:
-            print(f'Case #{count}: It is not a B2-Sequence.\n')
+            print(f'Case #{count}: It is not a B2-Sequence.')
             count += 1
             continue
         nums = list(map(int, line.split()))
