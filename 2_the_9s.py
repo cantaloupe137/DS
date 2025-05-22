@@ -13,7 +13,7 @@ def degree_9(string, a):
 
 while True:
     try:
-        n = input()
+        n = input().strip()  # 有空格的話會有問題
         if n == '0':
             break
         ans = degree_9(n, 0)
