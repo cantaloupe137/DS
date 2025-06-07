@@ -1,9 +1,10 @@
+# throwing cards away
 while True:
     try:
         n = int(input())
         all = []
         D = []
-        if n != 0 and n!= 1:
+        if n != 0 and n != 1:
             for i in range(1, n + 1):
                 all.append(i)
             for i in range(n - 2):
@@ -15,7 +16,7 @@ while True:
             del all[0]
             print('Discarded cards:', end=' ')
             for i in range(len(D) - 1):
-                print(D[i], end = ', ')
+                print(D[i], end=', ')
             print(D[len(D) - 1])
             print('Remaining card:', all[0])
         elif n == 0:

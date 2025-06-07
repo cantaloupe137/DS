@@ -1,4 +1,6 @@
+# train shuffle
 from collections import deque
+
 
 def solve(n, origin, re):
 
@@ -19,6 +21,7 @@ def solve(n, origin, re):
         else:
             return "Fail"
     return "Success" if not re else "Fail"
+
 
 try:
     while True:
