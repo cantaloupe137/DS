@@ -16,14 +16,14 @@ while True:
             print("Not Prime")
             continue
 
-        is_prime = True
-        for i in range(3, int(math.sqrt(n)) + 1, 2):
+        i = 1
+        while i * i <= n:
             if n % i == 0:
                 print("Not Prime")
-                is_prime = False
                 break
+            i += 1
 
-        if is_prime:
+        else:
             print("Prime")
 
     except EOFError:

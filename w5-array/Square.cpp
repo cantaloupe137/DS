@@ -65,6 +65,3 @@ int main()
             cout << "no\n";
     }
 }
-
-// ZeroJudge D375
-// Dr. SeanXD
