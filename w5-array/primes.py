@@ -16,7 +16,7 @@ while True:
             print("Not Prime")
             continue
 
-        i = 1
+        i = 2
         while i * i <= n:
             if n % i == 0:
                 print("Not Prime")
