@@ -18,7 +18,7 @@ for case_num in range(1, T + 1):
         if ch in freq:
             freq[ch] += 1
         else:
-            freq[ch] = 1
+            freq[ch] += 1
 
     prime_chars = sorted(ch for ch in freq if is_prime(freq[ch]))
 
